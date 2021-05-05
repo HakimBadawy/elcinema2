@@ -1,0 +1,25 @@
+<form name= "mName" method="POST" action="">
+    Movie Name <input type="text", name="mName" />
+</form>
+
+<body>
+    <body>
+        <table border = 1 align="center" style="background-color: rgb(0, 59, 59); color: white; width: 600px;">
+            <th>
+                Email address of user
+            </th>
+            <th>
+                Review
+            </th>
+            <th>
+                Rank
+            </th>
+           {% for review in results %}
+            <tr>
+                <td align="center"> {{review[3]}} </td>
+                <td align="center"> {{review[1]}} </td>
+                <td align="center"> {{review[2]}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+</body>

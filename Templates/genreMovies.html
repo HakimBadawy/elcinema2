@@ -1,0 +1,16 @@
+<body style="background-color: powderblue;">
+    <form name= "genre" method="POST" action="">
+        Genre <input type="text", name="genre" />
+   </form>
+   
+   <body>
+       <body>
+           <table border = 1>
+              {% for movie in results %}
+               <tr>
+                   <td> {{movie}} </td>
+               </tr>
+               {% endfor %}
+           </table>
+   </body>
+</body>

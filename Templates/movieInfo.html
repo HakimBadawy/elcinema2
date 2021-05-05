@@ -1,0 +1,42 @@
+<body style="background-color: powderblue;">
+    <form name= "mName" method="POST" action="">
+        Movie Name <input type="text", name="mName" />
+    </form>
+    
+    <body>
+        <body>
+            <table border = 1 style="background-color: rgb(27, 39, 43); color:white ;">
+               {% for movie in results %}
+                <th>
+                    Movie Name
+                </th>
+                <th>
+                    Movie Release Date
+                </th>
+                <th>
+                    Synopsis
+                </th>
+                <th>
+                    Duration in minutes
+                </th>
+                <th>
+                    Revenue in EGP
+                </th>
+                <th>
+                    Parental Guide
+                </th>
+                <tr>
+                    <td>{{movie[0]}} </td>
+                    <td>{{movie[1]}} </td>
+                    <td>{{movie[2]}} </td>
+                    <td>{{movie[3]}} </td>
+                    <td>{{movie[4]}} </td>
+                    <td>{{movie[5]}} </td>
+    
+    
+                </tr>
+    
+                {% endfor %}
+            </table>
+    </body>
+</body>

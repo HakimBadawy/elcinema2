@@ -1,0 +1,19 @@
+<body style="background-color: powderblue;">
+    <body>
+        <table border = 1 style="background-color: rgb(27, 28, 34); color:seashell; width: 600px;" align="center">
+            <th>
+                Revenue in EGP
+            </th>
+            <th>
+                Movie Name
+            </th>
+
+            {% for movie in results %}
+
+            <tr>
+                <td align="center"> {{movie[1]}} </td>
+                <td align="center"> {{movie[0]}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+</body>

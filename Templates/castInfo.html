@@ -1,0 +1,25 @@
+<body style="background-color: powderblue;">
+    <form name= "cName" method="POST" action="">
+        Cast Name <input type="text", name="cName" />
+    </form>
+    
+    <body>
+        <body>
+            <table border = 1>
+               {% for movie in results %}
+                <tr>
+                    <td> Name |     {{movie[0]}} </td>
+                </tr>
+                <tr>
+                    <td> Birthdate |     {{movie[1]}} </td>
+                </tr>
+                <tr>
+                    <td> Nationality |     {{movie[2]}} </td>
+                </tr>
+                <tr>
+                    <td> Biography |      {{movie[3]}} </td>
+                </tr>
+                {% endfor %}
+            </table>
+    </body>
+</body>
